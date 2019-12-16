@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .container{
+                display: grid;
+                grid-gap: 5px 10px;
+                grid-template-rows: 300px 300px 300px;
+                grid-template-columns: 350px 350px 350px;
+                justify-content: center;
+                margin: 30px;
+                align-content: center;
+                
+            }
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            .div1{
+                width: auto;
+                height: 80px;
+                background-color: black;
+                text-align: center;
+            }
+            font{
+                position: relative;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                align-self: center;
+                padding-top:40px ;
+                font-size: 30px;
+                
+            }
+            h3{
+                padding-top:18px;
+                font-size: 40px;
+                color: ghostwhite;
+            }
+            .grid-item{
+                padding: 20px;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            
+            }
+            .item1{
+                grid-row: 1;
+                grid-column: 1;
+            }
+            .item2{
+                grid-row: 1;
+                grid-column: 2;
+            }
+            .item3{
+                grid-row: 1;
+                grid-column: 3;
+            }
+            .item4{
+                grid-row: 2;
+                grid-column: 1/ span 2;
+            }
+            .item5{
+                grid-row: 2;
+                grid-column: 3;
+            }
+            .item6{
+                grid-row: 3;
+                grid-column: 1;
+            }
+            .item7{
+                grid-row: 3;
+                grid-column: 2;
+            }
+            
+        </style>
+
+    </head>
+    <body>
+        <div class="div1"><h3 class="font">IMAGE GALLERY</h3></div>
+        <div class="container">
+            <img src="1.png" class="item1 grid-item">
+            <img src="2.jpg" class="item2 grid-item">
+            <img src="3.jpg" class="item3 grid-item">
+            <img src="baloon.jpg" class="item4 grid-item">
+            <img src="2.jpg" class="item5 grid-item">
+            <img src="3.jpg" class="item6 grid-item">
+            <img src="1.png" class="item7 grid-item">
+        </div>
+
+    </body>
+</html>
