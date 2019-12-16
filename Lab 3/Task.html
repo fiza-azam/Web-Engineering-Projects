@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .bar{
+                width: auto;
+                height: 70px;
+                background-color: black;
+            }
+            .container{
+                display: flex;
+                justify-content: space-evenly;
+                float:right;
+            }
+            .container>span{
+                color: white;
+                padding: 30px;
+            }
+            .search-box{
+                margin: 0 auto;
+                width: 500px;
+                height: 250px;
+                align-items: center;
+                text-align: center;
+                padding-top: 20px;
+            }
+            .box{
+                margin: 0 auto;
+                width: 500px;
+                height: 80px;
+                align-items: center;
+                text-align: center;
+                padding-top: 20px;
+            }
+            .vidbox{
+                margin: 0 auto;
+                width: 500px;
+                height: 300px;
+                align-items: center;
+                text-align: center;
+                border: 30px;
+                padding-top: 80px;
+            }
+            .email{
+                width: 400px;
+                height: 30px;
+                margin-top:20px ;
+            }
+            .btn{
+                width: 100px;
+                height: 50px;
+                background-color:black;
+                color:white;
+                margin-top: 30px;
+            }
+            .box>img{
+                float: left;
+                width: 60px;
+                height: 70px;
+                margin-left: 40px;
+                padding-bottom: 15px;
+            }
+            .box>h3{
+                float: left;
+                margin-left: 15px;
+                padding-top: 10px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-size: 15px;
+            }
+            .box>span{
+                float: left;
+                margin-left: 15px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 9px;
+            }
+            .tablebox{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 100px;
+                width: 500px;
+                height: 100px;
+                align-items: center;
+                text-align: center;
+                padding-top: 20px;
+            }
+            .price{
+                width: 120px;
+                height: 200px;
+                align-items: center;
+                text-align: center;
+                border: 1px solid black;
+                margin: 20px;
+            }
+            iframe{
+                margin-top: 60px;
+                margin-right: 100px;
+            }
+            .head{
+                height: 30px;
+                width: auto;
+                background-color: black;
+                color: white;
+                float: top;
+                font-size: 10px;
+                padding-top: 10px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="bar">
+            <img src="1.png" style="float: left; width: 55px; height: 60px; padding-top: 10px;">
+            <span style="float: left; padding-left: 10px; color:white; padding-top:30px">Original Trombstones</span>
+            <div class="container">
+                <span>Features</span>
+                <span>How It Works</span>
+                <span>Pricing</span>
+            </div>
+        </div>
+        <div class="search-box">
+            <h2>Hand Crafted | Home-made | Masterpieces</h2>
+            <input type="email" class="email" placeholder="Enter Your Email Address" >
+            <button type="button" class="btn">Get Started</button>
+        </div>
+
+        <div class="box">
+            <img src="1.png" >
+            <h3>Premium Materials</h3>
+            <span>Our Trombones are made up of shiniest brass which is sourced locally.</span>
+        </div>
+        <div class="box">
+                <img src="1.png" >
+                <h3>Fast Shipping</h3>
+                <span>We make sure you receive your Trombones as soon as we are finished making it.</span>
+        </div>
+        <div class="box">
+                <img src="1.png" >
+                <h3>Custom Made</h3>
+                <span>You can customise the apperance of your instrument by us at very less cost.</span>
+         </div>
+         <center>
+         <div class="tablebox">
+                <div class="price">
+                    <div class="head">Tenor Trombone</div>
+                    <h2 style="padding-top:30px;">$600</h2>
+                    <span>Good Quality</span>
+                    <span>Lasts Long</span>
+                </div>
+                <div class="price">
+                     <div class="head">Brass Trombone</div>
+                    <h2 style="padding-top:30px;">$900</h2>
+                    <span>Quality Product</span>
+                    <span>Lasts Long</span>
+                </div>
+                <div class="price">
+                        <div class="head">Valve Trombone</div>
+                        <h2 style="padding-top:30px;">$1200</h2>
+                        <span>Extremely Good Quality</span>
+                        <span>Lasts Long</span>
+                </div>
+            </div>
+        </center>
+         <div class="vidbox">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/G5LqrMcq1QE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         </div>
+    </body>
+</html>
