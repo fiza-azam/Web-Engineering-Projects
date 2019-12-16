@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <style>
+        div {
+            position: relative;
+        }
+       img {
+           height: 800px;
+           width: 800px;
+           position: relative;
+           left: 150px;
+           display: none;
+       }
+       
+        .prev, .next {
+            position: absolute;
+            width: auto;
+            color: white;
+            top: 200px;
+            font-size: 38px;
+            font-weight: bold;
+        }
+        .prev {
+            left: 200px;
+        }
+        .next {
+            right: 200px;
+        }
+        a:hover {
+            background-color: #E9E8E8;
+        }
+       
+    </style>
+    <script>
+        var slides = document.getElementsByClassName("img-fluid");
+        var currentSlide = 0;
+
+        document.addEventListener('DOMContentLoaded', function() {
+            slides[0].style.display = "block";
+            document.querySelector('.prev').onclick = function() {
+                if (currentSlide > 0) {
+                    for (var i = 0; i < slides.length; i++) {
+                      slides[i].style.display = "none";
+                    }
+                    slides[--currentSlide].style.display = "block";
+                }
+                else {
+                    slides[0].style.display = "block";
+                }
+            };
+
+            document.querySelector('.next').onclick = function() {
+                if (currentSlide < (slides.length - 1)) {
+                    for (var i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    slides[++currentSlide].style.display = "block";
+
+                }
+                else {
+                    slides[3].style.display = "block";
+                }
+            };
+        });
+
+        
+        document.a
+    </script>
+  </head>
+  <body>
+    <div class="slider-container container">
+        <img src="static/first.jpg" class="img-fluid" alt="slider images">
+        <img src="static/second.jpg" class="img-fluid" alt="slider images">
+        <img src="static/third.jpg" class="img-fluid" alt="slider images">
+        <img src="static/fourth.jpg" class="img-fluid" alt="slider images">
+
+        <!-- buttons -->
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+    </div>
+  </body>
+</html>
