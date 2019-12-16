@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Navigation Bar</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	<style type="text/css">
+		/*margin: top bottom left right*/
+		p{
+			margin: 50px 20px 50px 50px;
+		}
+
+		/*button{
+			margin: 10px auto 70px 70px;
+			}*/
+		</style>
+	</head>
+	<body>
+
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="#"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-i_V1YxYI7fhKLV3ac9PspJaUnKtPyjBy02lfk52fY80F32PcLg&s" height="28px" width="28px"> Sample</a>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+				<ul class="navbar-nav ml-auto">
+
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="#">Services</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="#">FAQ</a>
+					</li>
+
+				</ul>
+			</div>
+		</nav>
+
+		<p>
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+		</p>
+
+		<!-- Button trigger modal -->
+		<div style="text-align: center;">
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="margin-bottom: 20px;">
+				Contact the Team
+			</button>
+
+		</div>
+
+		<!-- Modal -->
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Contact the Team</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+
+					<div>
+						<form>
+							<div class="form-group" style="margin: 10px 10px 10px;" >
+								<input class="form-control" type="email" placeholder="Enter Email">
+							</div>
+							<div class="form-group" style="margin: 10px 10px 10px;">
+								<textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter your message"></textarea>
+							</div>
+						</form>
+					</div>
+
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+						<!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="card-deck">
+
+			<div class="card">
+				<img class="card-img-top" src="camera.jpg" alt="Camera">
+				<div class="card-body">
+					<div style="text-align: center;">
+						<h5 class="card-title" style= "display: inline;">Camera</h5>
+						<span class="badge badge-pill badge-warning">30% off</span>
+						<p class="card-text" style="text-align: center; margin-top: -5px; margin-bottom: 30px;">Rs.15000</p>
+					</div>
+
+					<div class="card-footer" style="text-align: center;">
+						<a href="#" class="btn btn-primary">Order</a>
+						<a href="#" class="btn btn-success">Checkout</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<img class="card-img-top" src="headphones.jpg" alt="Headphones">
+				<div class="card-body">
+					<div style="text-align: center;">
+						<h5 class="card-title" style= "display: inline;">Headphones</h5>
+						<span class="badge badge-pill badge-primary">New</span>
+						<p class="card-text" style="text-align: center; margin-top: -5px; margin-bottom: 30px;">Rs.1500</p>
+					</div>
+
+					<div class="card-footer" style="text-align: center;">
+						<a href="#" class="btn btn-primary">Order</a>
+						<a href="#" class="btn btn-success">Checkout</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<img class="card-img-top" src="iPhone7.png" alt="iPhone 7" style="height: 14.5rem; width: 10rem; margin-left: 70px; margin-top: 20px;">
+				<div class="card-body">
+					<div style="text-align: center;">
+						<h5 class="card-title" style= "display: inline;">iPhone 7</h5>
+						<p class="card-text" style="text-align: center; margin-top: -5px; margin-bottom: 30px;">Rs.75000</p>
+					</div>
+
+					<div class="card-footer" style="text-align: center;">
+						<a href="#" class="btn btn-primary">Order</a>
+						<a href="#" class="btn btn-success">Checkout</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<img class="card-img-top" src="hpLaptop.png" alt="HP Laptop" style="height: 14.5rem; width: 15rem; margin-left: 50px; margin-top: 20px;">
+				<div class="card-body">
+					<div style="text-align: center;">
+						<h5 class="card-title" style= "display: inline;">HP Laptop</h5>
+						<p class="card-text" style="text-align: center; margin-top: -5px; margin-bottom: 30px;">Rs.60000</p>
+					</div>
+
+					<div class="card-footer" style="text-align: center;">
+						<a href="#" class="btn btn-primary">Order</a>
+						<a href="#" class="btn btn-success">Checkout</a>
+					</div>
+				</div>
+			</div>s
+
+		</body>
+		</html>
