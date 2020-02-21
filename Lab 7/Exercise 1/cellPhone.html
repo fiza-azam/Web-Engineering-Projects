@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <button onclick="print()">Print</button>
+        <p id="print"></p>
+        <p id="ab"></p>
+        <script>
+            var txt = "";
+            var cellPhone = {
+                color:"Rose Gold", 
+                brand:"Apple", 
+                call: function (value){
+                    return "Calling "+ value;
+            
+                },
+                sendMsg: function (value){
+                    return "Msg sent to "+value;
+                }
+            }
+           
+            function print(){
+                var txt = "";
+                cellPhone.call("121313");
+                cellPhone.sendMsg("2324343");
+                for(var x in cellPhone){
+                   
+                         txt += cellPhone[x]+"<br>";
+                    
+                }
+                document.getElementById("print").innerHTML = txt;
+
+            }    
+        </script>
+    </body>
+</html>

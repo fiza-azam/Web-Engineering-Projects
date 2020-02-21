@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+
+    <style>
+        .cardSize{
+            width: 50%;
+            margin: 50px auto;
+        }
+        .grid-container{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 10px;
+        padding: 20px;
+        height: 100px;
+        align-content: center;
+        justify-content: center;
+        grid-column-gap: 20px;
+        grid-row-gap: 40px;
+        margin-top: 20px;
+        }
+
+        .grid{
+        text-align: center;
+        font-size: 30px;
+        width: 300px;
+        height: 100px;
+        margin: 10px;
+        line-height: 100px;
+        border: grey solid 1px;
+        
+    }
+    .check{
+        width: 20px;
+        height: 20px;
+    }
+    .color{
+        color: grey;
+    }
+    .box{
+        margin: 0px 40px 0px 40px; 
+    }
+
+    .font{
+        font-size: 18px;
+    }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Quiz</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+      </nav>
+  
+        <div class="card cardSize">
+            <div class="card-header">
+                <span class="badge badge-dark" id="badge">1 out of 10</span><br>
+                <h5 id="question">What is the purpose of life?</h5>
+            </div>
+            <div class="card-body">
+                <div class="card-block">
+                    <div class="row">
+                        <div class="grid">
+                        <input type="checkbox" class="check" id="1c" onchange="funct1(this)">
+                        <span class="font" id="1">Hello1</span> 
+                    </div>
+                    <div class="grid">
+                        <input type="checkbox" class="check" id="2c" onchange="funct2(this)">
+                        <span class="font" id="2">Hello2</span>    
+                </div>
+                </div>
+                </div>
+                <div class="card-block" style="margin: 10px auto;">
+                    <div class="row">
+                        <div class="grid">
+                        <input type="checkbox" class="check" id="3c" onchange="funct3(this)">
+                        <span class="font" id="3">Hello</span> 
+                    </div>
+                    <div class="grid">
+                        <input type="checkbox" class="check" id="4c" onchange="funct4(this)">
+                        <span class="font" id="4">Hello</span> 
+                </div>
+                </div>
+                </div>
+            </div>
+              <div class="card-footer text-muted">
+                <div class="row">
+                    <div class="box">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-center">
+                              <li class="page-item"><a class="page-link" href="#"><span class="color" onclick="first()">First</span></a></li>
+                              <li class="page-item"><a class="page-link" href="#"><span class="color" onclick="prev()">Prev</span></a></li>
+                              <li class="page-item"><a class="page-link" href="#"><span class="color" onclick="next()">Next</span></a></li>
+                              <li class="page-item"><a class="page-link" href="#"><span class="color" onclick="last()">Last</span></a></li>
+                            </ul>
+                          </nav>
+                </div>
+                <div>
+                    <div class="box">
+                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                            <label class="btn btn-secondary active">
+                              <input type="radio" name="options" id="option1" autocomplete="off"> Quiz
+                            </label>
+                            <label class="btn btn-secondary">
+                              <input type="radio" name="options" id="option2" autocomplete="off"> Review
+                            </label>
+                            <label class="btn btn-secondary">
+                              <input type="radio" name="options" id="option3" autocomplete="off" onchange="submit()"> Submit Quiz
+                            </label>
+                          </div>
+                      </div>
+            </div>
+            </div>
+              </div>
+          </div>
+          <script src="Quiz.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

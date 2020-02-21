@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <p id="list"></p>
+     
+        <script>
+            var list = ["Bread", "Eggs", "Fruits", "Milk"];
+            var ul = document.createElement("ul");
+            ul.innerHTML = "Shopping List";
+            document.getElementById('list').appendChild(ul);
+            for (let index = 0; index < list.length; index++) {
+                var li = document.createElement('li');
+			    ul.appendChild(li);
+			    li.innerHTML += list[index];
+            }
+
+        </script>
+    </body>
+</html>
